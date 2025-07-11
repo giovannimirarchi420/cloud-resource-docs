@@ -1,0 +1,26 @@
+# Cloud Resource Docs Helm Chart Values
+# Minimal configuration - only essential settings
+
+# Docker image configuration (REQUIRED)
+image:
+  repository: docker.io/g420/prognose-docs
+  tag: "0.0.0"
+  pullPolicy: Always
+
+# Number of replicas (optional, default: 2)
+# replicaCount: 2
+
+# Resource limits (optional)
+resources: {}
+  # limits:
+  #   cpu: 500m
+  #   memory: 512Mi
+  # requests:
+  #   cpu: 250m
+  #   memory: 256Mi
+
+# Basic configuration with defaults
+ingress:
+  enabled: true
+  host: "docs.prognose.crownlabs.polito.it"
+  path: "/"

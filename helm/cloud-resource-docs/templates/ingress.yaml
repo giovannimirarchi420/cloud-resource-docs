@@ -1,0 +1,27 @@
+{{- if (.Values.ingress.enabled | default true) -}}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ .Release.Name }}-ingress
+  labels:
+    {{- include "cloud-resource-docs.labels" . | nindent 4 }}
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-production
+spec:
+  ingressClassName: nginx-external
+  rules:
+    - host: {{ .Values.ingress.host | default "docs.your-domain.com" }}
+      http:
+        paths:
+          - backend:
+              service:
+                name: {{ .Release.Name }}
+                port:
+                  number: 80
+            path: {{ .Values.ingress.path | default "/" }}
+            pathType: Prefix
+  tls:
+    - hosts:
+        - {{ .Values.ingress.host | default "docs.your-domain.com" }}
+      secretName: {{ .Release.Name }}-ingress-tls
+{{- end }}

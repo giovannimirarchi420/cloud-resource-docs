@@ -102,10 +102,6 @@ const config = {
                 to: '/docs/complete-setup-guide',
               },
               {
-                label: 'Dashboard Guide',
-                to: '/docs/dashboard',
-              },
-              {
                 label: 'Webhooks Integration',
                 to: '/docs/guides/webhooks',
               },
