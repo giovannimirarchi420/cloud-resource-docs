@@ -1,5 +1,5 @@
 # Multi-stage build for Docusaurus documentation site
-FROM node:18-alpine AS builder
+FROM --platform=linux/amd64 node:18-alpine AS builder
 
 # Set working directory
 WORKDIR /app
@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Production stage with nginx
-FROM nginx:alpine
+FROM --platform=linux/amd64 nginx:alpine
 
 # Copy built site to nginx html directory
 COPY --from=builder /app/build /usr/share/nginx/html
