@@ -1,0 +1,167 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #1976d2;
+  --ifm-color-primary-dark: #1565c0;
+  --ifm-color-primary-darker: #1360b7;
+  --ifm-color-primary-darkest: #0f4c96;
+  --ifm-color-primary-light: #1e88e5;
+  --ifm-color-primary-lighter: #2196f3;
+  --ifm-color-primary-lightest: #42a5f5;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  /* Custom colors based on product logo */
+  --ifm-color-success: #4caf50;
+  --ifm-color-warning: #ff9800;
+  --ifm-color-danger: #f44336;
+  --ifm-color-info: #1976d2;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #42a5f5;
+  --ifm-color-primary-dark: #2196f3;
+  --ifm-color-primary-darker: #1e88e5;
+  --ifm-color-primary-darkest: #1976d2;
+  --ifm-color-primary-light: #64b5f6;
+  --ifm-color-primary-lighter: #90caf9;
+  --ifm-color-primary-lightest: #bbdefb;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  
+  /* Custom colors for dark mode */
+  --ifm-color-success: #66bb6a;
+  --ifm-color-warning: #ffb74d;
+  --ifm-color-danger: #ef5350;
+  --ifm-color-info: #42a5f5;
+}
+
+/* Improved text contrast and readability */
+:root {
+  --ifm-font-weight-semibold: 600;
+  --ifm-font-weight-bold: 700;
+}
+
+/* Custom brand styling */
+.navbar__brand {
+  color: white !important;
+}
+
+.navbar__title {
+  font-weight: 600;
+  color: white !important;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  color: white;
+}
+
+.hero .hero__title {
+  color: white;
+  font-weight: 800;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero .hero__subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Feature cards styling */
+.text--center h3 {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* Button styling */
+.button--primary {
+  background: linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-primary-light));
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.button--primary:hover {
+  background: linear-gradient(135deg, var(--ifm-color-primary-dark), var(--ifm-color-primary));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+}
+
+/* Ensure buttons are readable */
+.hero .button {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--ifm-color-primary-darkest);
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero .button:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+.footer--dark {
+  background: linear-gradient(135deg, var(--ifm-color-primary-darkest), var(--ifm-color-primary-dark));
+}
+
+/* Sidebar styling */
+.theme-doc-sidebar-item-link {
+  color: var(--ifm-color-content-secondary);
+}
+
+.theme-doc-sidebar-item-link:hover {
+  color: var(--ifm-color-primary);
+}
+
+.theme-doc-sidebar-item-link--active {
+  color: var(--ifm-color-primary) !important;
+  background: rgba(25, 118, 210, 0.1);
+  border-radius: 6px;
+}
+
+/* Navbar styling for better visibility */
+.navbar {
+  background: var(--ifm-color-primary) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar__item .navbar__link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+}
+
+.navbar__item .navbar__link:hover {
+  color: white !important;
+}
+
+.navbar__item .navbar__link--active {
+  color: white !important;
+  font-weight: 600;
+}
+
+/* Dark theme specific styles for better readability */
+[data-theme='dark'] .hero__title {
+  color: var(--ifm-color-primary-lightest);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .hero__subtitle {
+  color: var(--ifm-color-emphasis-600);
+}
+
+[data-theme='dark'] .navbar__title {
+  color: white !important;
+}
+
+[data-theme='dark'] .text--center h3 {
+  color: var(--ifm-color-primary-light);
+}

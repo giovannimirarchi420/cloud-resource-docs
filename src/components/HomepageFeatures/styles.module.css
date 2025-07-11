@@ -1,0 +1,18 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+/* Responsive adjustments for 4 features */
+@media screen and (max-width: 996px) {
+  .features .col {
+    margin-bottom: 2rem;
+  }
+}
