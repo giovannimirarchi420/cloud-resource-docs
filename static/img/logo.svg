@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="#1976d2" />
+  
+  <!-- Cloud shape -->
+  <path d="M44,26c0-6.627-5.373-12-12-12c-5.782,0-10.608,4.085-11.742,9.525C17.379,22.567,15,24.377,15,27c0,3.314,2.686,6,6,6h23c2.761,0,5-2.239,5-5C49,25.72,46.962,24.001,44,26z" fill="white" opacity="0.9"/>
+  
+  <!-- Resource shapes -->
+  <rect x="20" y="37" width="8" height="8" rx="2" fill="#4caf50" />
+  <rect x="32" y="37" width="8" height="8" rx="2" fill="#ff9800" />
+  <rect x="26" y="49" width="8" height="8" rx="2" fill="#f44336" />
+  
+  <!-- Connection lines -->
+  <line x1="24" y1="37" x2="24" y2="33" stroke="white" stroke-width="2" stroke-linecap="round" />
+  <line x1="36" y1="37" x2="36" y2="33" stroke="white" stroke-width="2" stroke-linecap="round" />
+  <line x1="30" y1="49" x2="30" y2="45" stroke="white" stroke-width="2" stroke-linecap="round" />
+  <line x1="24" y1="33" x2="36" y2="33" stroke="white" stroke-width="2" stroke-linecap="round" />
+  <line x1="30" y1="45" x2="36" y2="45" stroke="white" stroke-width="2" stroke-linecap="round" />
+  <line x1="30" y1="45" x2="24" y2="45" stroke="white" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Calendar icon in the cloud -->
+  <rect x="29" y="21" width="10" height="10" rx="2" fill="#1976d2" stroke="white" stroke-width="1.5" />
+  <line x1="32" y1="19" x2="32" y2="23" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="36" y1="19" x2="36" y2="23" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="31" y1="26" x2="37" y2="26" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+</svg>
