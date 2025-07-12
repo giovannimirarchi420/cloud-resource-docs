@@ -90,59 +90,11 @@ Security features include:
 - **☸️ prognose-helm-chart**: Kubernetes deployment using Helm charts - see our [Kubernetes Deployment Guide](./guides/kubernetes-deployment.md)
 - **🔗 Webhook System**: Extensible webhook framework for resource integration - see our [Webhooks Guide](./guides/webhooks.md)
 
-## 🗝️ Key Features
-
-### 📋 Dashboard & Resource Management
-- **Unified Dashboard**: Single-pane view of all resources across multiple sites
-- **Interactive Calendar**: Visual booking interface with drag-and-drop scheduling
-- **Resource Types**: Support for diverse resource types (servers, GPU clusters, lab equipment)
-- **Multi-site Support**: Manage resources across different physical or cloud locations
-
-![Resource Explorer](/img/resource_explorer.png)
-
-![Resource Types](/img/resource_type.png)
-
-![Sites Management](/img/sites.png)
-
-### 🔗 Webhook System
-Based on the webhook management interface shown in your screenshots:
-
-- **Visual Configuration**: Easy-to-use web interface for webhook setup
-- **Event Filtering**: Choose specific events (Booking Created, Started, Ended) to trigger webhooks
-- **Resource Scoping**: Configure webhooks for all resources, specific resources, or resource types
-- **Real-time Monitoring**: Live status dashboard showing webhook success/failure rates
-- **Comprehensive Logging**: Detailed audit trail with timestamps and HTTP status codes
-
-![Webhooks Dashboard](/img/webhooks.png)
-
-### 📊 Monitoring & Audit Capabilities
-Your system provides enterprise-grade monitoring:
-
-- **Status Tracking**: Real-time webhook execution status (Success/Failed indicators)
-- **HTTP Response Codes**: Detailed logging of webhook responses (200, 500, etc.)
-- **Event Timeline**: Chronological view of all booking events and webhook triggers
-- **Performance Metrics**: Track webhook response times and reliability
-- **Failure Analysis**: Identify and troubleshoot integration issues quickly
-
-### 🔐 Enterprise Security
-- Keycloak-based authentication and authorization
-- Role-based access control (RBAC)
-- Secure API endpoints with JWT tokens
-
-![User Management](/img/user_management.png)
-
-![User Profile](/img/profile.png)
-
-### 🚀 Deployment & Scalability
-- Docker containerization for consistent deployments
-- Kubernetes support with Helm charts - see our [Kubernetes Deployment Guide](./guides/kubernetes-deployment.md)
-- Microservices architecture for horizontal scaling
-
 ## Getting Started
 
 To get started with the Cloud Resource Reservation System:
 
-1. **Development Environment**: Use Docker Compose for local development
+1. **Development Environment**: Use Docker Compose for local development on the [main repository](https://github.com/giovannimirarchi420/cloud-resource-reservation) 
 2. **Production Deployment**: Deploy using Kubernetes with our [Helm Chart Deployment Guide](./guides/kubernetes-deployment.md)
 3. **Webhook Integration**: Follow our [Webhooks Guide](./guides/webhooks.md) to integrate custom resources
 
@@ -153,4 +105,3 @@ A live demo is available at:
 - **Username**: admin
 - **Password**: password
 
-For local development, check out the [main repository](https://github.com/giovannimirarchi420/cloud-resource-reservation) for setup instructions.

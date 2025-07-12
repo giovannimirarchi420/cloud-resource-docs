@@ -315,7 +315,7 @@ signature = hmac.new(
     hashlib.sha256
 ).hexdigest()
 
-# Add header: X-Webhook-Signature: sha256=<signature>
+# Add header: X-Webhook-Signature: <signature>
 ```
 
 ## Deployment

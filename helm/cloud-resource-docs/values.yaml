@@ -4,7 +4,7 @@
 # Docker image configuration (REQUIRED)
 image:
   repository: docker.io/g420/prognose-docs
-  tag: "0.0.5"
+  tag: "0.0.6"
   pullPolicy: Always
 
 # Number of replicas (optional, default: 2)
