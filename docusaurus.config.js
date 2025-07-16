@@ -28,7 +28,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'giovannimirarchi420', // Usually your GitHub org/user name.
-  projectName: 'cloud-resource-reservation', // Usually your repo name.
+  projectName: 'cloud-resource-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -51,7 +51,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/giovannimirarchi420/cloud-resource-reservation/tree/main/docs/',
+            'https://github.com/giovannimirarchi420/cloud-resource-docs/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -81,7 +81,7 @@ const config = {
             label: 'Documentation',
           },
           {
-            href: 'https://github.com/giovannimirarchi420/cloud-resource-reservation',
+            href: 'https://github.com/giovannimirarchi420/cloud-resource-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -133,7 +133,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/giovannimirarchi420/cloud-resource-reservation',
+                href: 'https://github.com/giovannimirarchi420/cloud-resource-docs',
               },
             ],
           },
