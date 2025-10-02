@@ -98,10 +98,3 @@ To get started with the Cloud Resource Reservation System:
 2. **Production Deployment**: Deploy using Kubernetes with our [Helm Chart Deployment Guide](./guides/kubernetes-deployment.md)
 3. **Webhook Integration**: Follow our [Webhooks Guide](./guides/webhooks.md) to integrate custom resources
 
-## Demo Environment
-
-A live demo is available at:
-- **URL**: https://204.216.215.139/
-- **Username**: admin
-- **Password**: password
-
